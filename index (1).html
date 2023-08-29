@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Project</title>
+</head>
+<body>
+    <div style="padding: 10px;">
+        <center><h1>School Form</h1></center>
+    </div>
+    <div id="wrapper" style="width: 800px; margin-right: auto; margin-left: auto;">
+    <div style="display: flex; flex-direction: row; justify-content: space-between;">
+        <div style="flex: 1; padding: 20px; border: 2px solid #eee;">
+            Name : <input type="text" name="name" placeholder="Enter Your Name" class="input_styler"><br>
+            Password : <input type="Password" name="password" placeholder="Choose Your Password" class="input_styler"><br>
+            Male : <input type="checkbox"> Female : <input type="checkbox"><br>
+            <br>
+            <center><input type="submit" value="Submit" class="buttonStyler"> <input type="Reset" value="Reset" class="buttonInvert"></center>
+        </div>
+        <div style="flex: 1; padding: 20px; border: 2px solid #eee;">
+            <h3>Maths</h3>
+            <p>It base on the CLU and ALU.
+Computer programming language.</p>
+        </div>
+    </div>
+    <h3>Types Of Subjects</h3>
+    <p>&bull; Maths</p>
+    <p>&bull; Science</p>
+    <div style="float: left; display: inline; margin-top: -20px;"><p>&bull; SST &rarr;</p></div><div style="float: left; padding-left: 10px; margin-top: -5px;">1) Civics<br> 2) History <br> 3) Geo</div>
+    <center><br><br><br><br>
+        <div style="clear:both;"></div>
+        <table id="customers">
+            <thead>
+                <tr>
+                    <th>Roll.NO</th>
+                    <th>Name</th>
+                    <th>Class</th>
+                    <th>Subject</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>akash</td>
+                    <td>6th</td>
+                    <td>english</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>ajay</td>
+                    <td>6th</td>
+                    <td>maths</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>arjun</td>
+                    <td>6th</td>
+                    <td>science</td>
+                </tr>
+            </tbody>
+        </table>
+    </center>
+    </div>
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto&display=swap');
+  * {
+    font-family: 'Roboto', sans-serif;
+  }
+        #customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+.input_styler {
+    padding: 10px;
+    font-size: 14px;
+    border: 2px solid #eee;
+    width: 200px;
+    margin-bottom: 20px;
+}
+.buttonStyler {
+    padding: 10px;
+    border: 1px solid #279EFF;
+    background: #279EFF;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: all ease 300ms;
+}
+.buttonInvert {
+    padding: 10px;
+    border: 1px solid #eee;
+    background: #fff;
+    color: #000;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: all ease 300ms;
+}
+.buttonStyler:hover, .buttonInvert:hover {
+    background: #222;
+    color: #fff;
+    border: 1px solid #222;
+}
+    </style>
+</body>
+</html>
